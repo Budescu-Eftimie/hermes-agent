@@ -13,6 +13,4 @@ services:
       - "8001:8001"
     volumes:
       - D:/hermes-github/data:/opt/data
-    environment:
-      - HERMES_S6_SUPERVISED_CHILD=1
-    command: gateway run
+    command: /bin/bash /opt/data/gateway_run.sh
